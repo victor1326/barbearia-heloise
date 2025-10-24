@@ -6,18 +6,18 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Carlos Silva",
-    text: "Excelente atendimento e profissionais muito qualificados. Sempre saio satisfeito com o resultado!",
+    name: "Maria Santos",
+    text: "Encontrei no Beleza Essencial muito mais que um salão. Encontrei um lugar que me ajudou a resgatar minha autoestima e me sentir linda novamente!",
     rating: 5,
   },
   {
-    name: "Roberto Mendes",
-    text: "O melhor salão da região! Ambiente agradável e serviços de primeira qualidade.",
+    name: "Ana Paula",
+    text: "Estava passando por um momento difícil e me descuidando. Aqui fui acolhida com carinho e saí renovada, por dentro e por fora!",
     rating: 5,
   },
   {
-    name: "Fernando Costa",
-    text: "Frequento há anos e nunca me decepcionei. Recomendo para todos os amigos!",
+    name: "Juliana Costa",
+    text: "Mais que um tratamento de beleza, é uma experiência de amor próprio. Saio daqui me sentindo confiante e poderosa!",
     rating: 5,
   },
 ]
@@ -48,9 +48,11 @@ export function Testimonials() {
     <section ref={sectionRef} className="py-24 bg-[#C4BAB3]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#52130C] text-balance">Depoimentos</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-[#52130C] text-balance">Histórias de Transformação</h2>
           <div className="w-20 h-1 bg-accent mx-auto" />
-          <p className="text-lg text-[#603A30] max-w-2xl mx-auto text-pretty">O que nossos clientes dizem sobre nós</p>
+          <p className="text-lg text-[#603A30] max-w-2xl mx-auto text-pretty">
+            Veja como ajudamos mulheres a reconhecerem sua própria beleza
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

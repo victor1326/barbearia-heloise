@@ -3,27 +3,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Custom color palette for luxury barbershop */
 :root {
-  --background: #52130c; /* Dark Fire */
-  --foreground: #c4bab3; /* Wool */
-  --card: #603a30; /* Chestnut */
-  --card-foreground: #c4bab3; /* Wool */
-  --popover: #603a30; /* Chestnut */
-  --popover-foreground: #c4bab3; /* Wool */
-  --primary: #741717; /* Red Wine */
-  --primary-foreground: #d4af37; /* Gold */
-  --secondary: #8d695d; /* Caramel */
-  --secondary-foreground: #c4bab3; /* Wool */
-  --muted: #8d695d; /* Caramel */
-  --muted-foreground: #c4bab3; /* Wool */
-  --accent: #d4af37; /* Gold */
-  --accent-foreground: #52130c; /* Dark Fire */
-  --destructive: #741717; /* Red Wine */
-  --destructive-foreground: #c4bab3; /* Wool */
-  --border: #8d695d; /* Caramel */
-  --input: #603a30; /* Chestnut */
-  --ring: #d4af37; /* Gold */
+  /* Updated color scheme to wine (burgundy) and yellow/gold for Beleza Essencial brand */
+  --background: #4a0e0e; /* Deep wine/burgundy background */
+  --foreground: #f5f5dc; /* Warm cream text */
+  --card: #6b1a1a; /* Wine card background */
+  --card-foreground: #f5f5dc; /* Warm cream */
+  --popover: #6b1a1a; /* Wine */
+  --popover-foreground: #f5f5dc; /* Warm cream */
+  --primary: #8b2635; /* Rich burgundy/wine */
+  --primary-foreground: #ffd700; /* Bright yellow/gold */
+  --secondary: #5a1a1a; /* Dark wine */
+  --secondary-foreground: #f5f5dc; /* Warm cream */
+  --muted: #7a2a2a; /* Muted wine */
+  --muted-foreground: #e8d5b7; /* Soft cream */
+  --accent: #ffd700; /* Bright yellow/gold accent */
+  --accent-foreground: #4a0e0e; /* Deep wine */
+  --destructive: #dc2626; /* Red */
+  --destructive-foreground: #f5f5dc; /* Warm cream */
+  --border: #7a2a2a; /* Muted wine */
+  --input: #6b1a1a; /* Wine */
+  --ring: #ffd700; /* Gold */
   --radius: 0.75rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -145,7 +145,6 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Gold glow effect for buttons */
 @keyframes goldGlow {
   0%,
   100% {

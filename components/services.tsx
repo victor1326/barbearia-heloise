@@ -2,32 +2,32 @@
 
 import { useEffect, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Scissors, Sparkles, Droplet, Eye } from "lucide-react"
+import { Scissors, Sparkles, Hand, Palette } from "lucide-react"
 
 const services = [
   {
     icon: Scissors,
-    title: "Corte Masculino",
-    description: "Cortes modernos e clássicos executados por profissionais experientes",
-    price: "A partir de R$ 60",
-  },
-  {
-    icon: Sparkles,
-    title: "Barba Premium",
-    description: "Tratamento completo com toalha quente, óleos especiais e finalização impecável",
-    price: "A partir de R$ 45",
-  },
-  {
-    icon: Droplet,
-    title: "Hidratação Capilar",
-    description: "Tratamentos profissionais para revitalizar e fortalecer seus cabelos",
+    title: "Cabelo",
+    description: "Cortes, coloração, mechas e tratamentos capilares que realçam sua beleza natural",
     price: "A partir de R$ 80",
   },
   {
-    icon: Eye,
-    title: "Design de Sobrancelhas",
-    description: "Modelagem e design personalizado para realçar seu olhar",
-    price: "A partir de R$ 35",
+    icon: Hand,
+    title: "Unhas",
+    description: "Manicure e pedicure com esmaltação tradicional, gel e nail art personalizada",
+    price: "A partir de R$ 45",
+  },
+  {
+    icon: Sparkles,
+    title: "Pele",
+    description: "Tratamentos faciais, limpeza de pele e procedimentos para revitalizar sua aparência",
+    price: "A partir de R$ 120",
+  },
+  {
+    icon: Palette,
+    title: "Maquiagem",
+    description: "Maquiagem profissional para eventos especiais e dia a dia que destaca sua beleza",
+    price: "A partir de R$ 100",
   },
 ]
 
@@ -60,7 +60,7 @@ export function Services() {
           <h2 className="text-4xl md:text-5xl font-serif text-card-foreground text-balance">Nossos Serviços</h2>
           <div className="w-20 h-1 bg-accent mx-auto" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Oferecemos uma gama completa de serviços para cuidar do seu visual
+            Serviços pensados para elevar sua autoestima e bem-estar
           </p>
         </div>
 

@@ -3,12 +3,12 @@
 import { useEffect, useRef } from "react"
 
 const galleryImages = [
-  { id: 1, src: "/gallery/haircut-1.jpg", alt: "Corte masculino moderno" },
-  { id: 2, src: "/gallery/beard-trim.jpg", alt: "Aparar e cuidar da barba" },
-  { id: 3, src: "/gallery/hairstyle.jpg", alt: "Penteado estiloso com fade" },
-  { id: 4, src: "/gallery/salon-interior.jpg", alt: "Interior luxuoso do salão" },
-  { id: 5, src: "/gallery/grooming.jpg", alt: "Serviço de grooming premium" },
-  { id: 6, src: "/gallery/classic-cut.jpg", alt: "Corte clássico de barbearia" },
+  { id: 1, src: "/gallery/hair-color.jpg", alt: "Coloração e mechas profissionais" },
+  { id: 2, src: "/gallery/manicure.jpg", alt: "Manicure e nail art" },
+  { id: 3, src: "/gallery/facial.jpg", alt: "Tratamento facial relaxante" },
+  { id: 4, src: "/gallery/salon-interior.jpg", alt: "Interior acolhedor do salão" },
+  { id: 5, src: "/gallery/makeup.jpg", alt: "Maquiagem profissional" },
+  { id: 6, src: "/gallery/hairstyle.jpg", alt: "Penteado elegante" },
 ]
 
 export function Gallery() {
@@ -40,7 +40,7 @@ export function Gallery() {
           <h2 className="text-4xl md:text-5xl font-serif text-foreground text-balance">Galeria</h2>
           <div className="w-20 h-1 bg-accent mx-auto" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Confira alguns dos nossos trabalhos
+            Momentos de transformação e beleza
           </p>
         </div>
 

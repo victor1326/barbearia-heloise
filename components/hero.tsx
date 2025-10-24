@@ -26,21 +26,17 @@ export function Hero() {
   }, [])
 
   return (
-    <section
-      id="inicio"
-      ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[#603A30] to-[#52130C] pt-20"
-    >
-      {/* Background texture overlay */}
-      <div className="absolute inset-0 bg-[url('/luxury-barbershop-interior-dark.jpg')] bg-cover bg-center opacity-20" />
+    <section id="inicio" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-20">
+      <div className="absolute inset-0 bg-[url('/hero-background.jpg')] bg-cover bg-center" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#603A30]/80 to-[#52130C]/90" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-foreground leading-tight text-balance">
-            Estilo, Elegância e Tradição
+            Beleza que Transforma, Autoestima que Brilha
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto text-pretty">
-            Transforme seu visual com os melhores profissionais
+            Mais do que estética, uma experiência de renovação e amor próprio
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
@@ -48,7 +44,7 @@ export function Hero() {
               className="bg-primary text-primary-foreground hover:bg-primary/90 gold-glow-hover rounded-full px-8 text-lg"
               asChild
             >
-              <a href="#agendamento">Agende Agora</a>
+              <a href="#agendamento">Agende Sua Transformação</a>
             </Button>
             <Button
               size="lg"
@@ -56,7 +52,7 @@ export function Hero() {
               className="border-accent text-accent hover:bg-accent hover:text-accent-foreground rounded-full px-8 text-lg bg-transparent"
               asChild
             >
-              <a href="#servicos">Nossos Serviços</a>
+              <a href="#servicos">Conheça Nossos Serviços</a>
             </Button>
           </div>
         </div>

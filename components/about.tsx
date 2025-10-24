@@ -29,23 +29,36 @@ export function About() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-serif text-foreground text-balance">Sobre Nós</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-foreground text-balance">
+              Mais que Beleza, uma Transformação
+            </h2>
             <div className="w-20 h-1 bg-accent" />
             <p className="text-lg text-foreground leading-relaxed text-pretty">
-              Há mais de 15 anos, o Hairstyling Salão é referência em estilo e elegância. Nossa equipe de profissionais
-              altamente qualificados está comprometida em proporcionar uma experiência única e personalizada para cada
-              cliente.
+              No <span className="font-semibold text-accent">Beleza Essencial</span>, acreditamos que a beleza vai além
+              da estética. Nosso propósito é ajudar você a reconhecer seu próprio valor e beleza, reconstruindo sua
+              autoestima e amor próprio.
             </p>
             <p className="text-lg text-foreground leading-relaxed text-pretty">
-              Combinamos técnicas tradicionais com as tendências mais modernas do mercado, garantindo que você saia do
-              nosso salão com um visual impecável e renovado.
+              Oferecemos mais do que serviços de beleza - proporcionamos uma experiência acolhedora e transformadora.
+              Cada atendimento é pensado para contribuir com seu bem-estar emocional, não apenas com sua aparência.
             </p>
             <p className="text-lg text-foreground leading-relaxed text-pretty">
-              Nosso compromisso é com a excelência, o cuidado e a satisfação de cada cliente que nos confia seu estilo.
+              Com um atendimento humanizado e empático, nossa missão é fazer você sair daqui se sentindo mais confiante,
+              valorizada e pronta para enfrentar o mundo com autoestima renovada.
             </p>
+            <div className="bg-primary/10 border-l-4 border-accent p-6 rounded-r-lg">
+              <p className="text-foreground/90 italic text-pretty">
+                "85% das mulheres brasileiras afirmam que a aparência dos cabelos afeta diretamente sua autoconfiança.
+                Estamos aqui para transformar essa estatística em histórias de empoderamento."
+              </p>
+            </div>
           </div>
           <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
-            <img src="/professional-barber-team-luxury-salon.jpg" alt="Nossa equipe" className="w-full h-full object-cover" />
+            <img
+              src="/about-salon.jpg"
+              alt="Espaço acolhedor do Beleza Essencial"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
