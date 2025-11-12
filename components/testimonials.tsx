@@ -11,13 +11,18 @@ const testimonials = [
     rating: 5,
   },
   {
+    name: "Carlos Silva",
+    text: "Como homem, nunca pensei que poderia ter uma experiência tão acolhedora e profissional. Saí daqui me sentindo mais confiante e cuidado!",
+    rating: 5,
+  },
+  {
     name: "Ana Paula",
     text: "Estava passando por um momento difícil e me descuidando. Aqui fui acolhida com carinho e saí renovada, por dentro e por fora!",
     rating: 5,
   },
   {
-    name: "Juliana Costa",
-    text: "Mais que um tratamento de beleza, é uma experiência de amor próprio. Saio daqui me sentindo confiante e poderosa!",
+    name: "Felipe Costa",
+    text: "O atendimento é excelente! Fiz meu design de barba e saí confiante. Recomendo para todos os meus amigos!",
     rating: 5,
   },
 ]
@@ -51,11 +56,11 @@ export function Testimonials() {
           <h2 className="text-4xl md:text-5xl font-serif text-[#52130C] text-balance">Histórias de Transformação</h2>
           <div className="w-20 h-1 bg-accent mx-auto" />
           <p className="text-lg text-[#603A30] max-w-2xl mx-auto text-pretty">
-            Veja como ajudamos mulheres a reconhecerem sua própria beleza
+            Veja como ajudamos pessoas a reconhecerem sua própria beleza
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-background border-border hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-6 space-y-4">

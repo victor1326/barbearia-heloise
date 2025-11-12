@@ -4,11 +4,11 @@ import { useEffect, useRef } from "react"
 
 const galleryImages = [
   { id: 1, src: "/gallery/hair-color.jpg", alt: "Coloração e mechas profissionais" },
-  { id: 2, src: "/gallery/manicure.jpg", alt: "Manicure e nail art" },
+  { id: 2, src: "/gallery/manicure.jpg", alt: "Manicure profissional" },
   { id: 3, src: "/gallery/facial.jpg", alt: "Tratamento facial relaxante" },
-  { id: 4, src: "/gallery/salon-interior.jpg", alt: "Interior acolhedor do salão" },
-  { id: 5, src: "/gallery/makeup.jpg", alt: "Maquiagem profissional" },
-  { id: 6, src: "/gallery/hairstyle.jpg", alt: "Penteado elegante" },
+  { id: 4, src: "/gallery/makeup.jpg", alt: "Maquiagem profissional" },
+  { id: 5, src: "/gallery/hairstyle.jpg", alt: "Penteados estilosos" },
+  { id: 6, src: "/gallery/classic-cut.jpg", alt: "Corte clássico elegante" },
 ]
 
 export function Gallery() {
@@ -44,13 +44,13 @@ export function Gallery() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
           {galleryImages.map((image) => (
             <div key={image.id} className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer">
               <img
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 sepia-[0.3] contrast-[1.1]"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 brightness-[1.08] contrast-[1.12] saturate-[1.02]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>

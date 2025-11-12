@@ -29,9 +29,7 @@ export function About() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-foreground text-balance">
-              Mais que Beleza, uma Transformação
-            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-foreground text-balance">Sobre Nós</h2>
             <div className="w-20 h-1 bg-accent" />
             <p className="text-base md:text-lg text-foreground leading-relaxed text-pretty">
               No <span className="font-semibold text-accent">Beleza Essencial</span>, acreditamos que a beleza vai além
@@ -44,19 +42,19 @@ export function About() {
             </p>
             <p className="text-base md:text-lg text-foreground leading-relaxed text-pretty">
               Com um atendimento humanizado e empático, nossa missão é fazer você sair daqui se sentindo mais confiante,
-              valorizada e pronta para enfrentar o mundo com autoestima renovada.
+              valorizado e pronto para enfrentar o mundo com autoestima renovada.
             </p>
             <div className="bg-primary/10 border-l-4 border-accent p-4 md:p-6 rounded-r-lg">
               <p className="text-sm md:text-base text-foreground/90 italic text-pretty">
-                "85% das mulheres brasileiras afirmam que a aparência dos cabelos afeta diretamente sua autoconfiança.
-                Estamos aqui para transformar essa estatística em histórias de empoderamento."
+                "A aparência dos cabelos tem o poder de refletir como nos sentimos por dentro. Quando eles estão bem,
+                nossa confiança e autoestima também florescem."
               </p>
             </div>
           </div>
           <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-2xl order-1 lg:order-2">
             <img
-              src="/about-salon.jpg"
-              alt="Espaço acolhedor do Beleza Essencial"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5Tcv2PoXxwTBWD3ahVukkXpIdVQsZT.png"
+              alt="Interior elegante do Beleza Essencial"
               className="w-full h-full object-cover"
             />
           </div>

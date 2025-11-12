@@ -4,26 +4,26 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color scheme to wine (burgundy) and yellow/gold for Beleza Essencial brand */
-  --background: #4a0e0e; /* Deep wine/burgundy background */
+  /* Updated color scheme: wine to red, yellow to light beige/tan, dark brown border */
+  --background: #3d1a1a; /* Deep burgundy/red background */
   --foreground: #f5f5dc; /* Warm cream text */
-  --card: #6b1a1a; /* Wine card background */
+  --card: #5a2525; /* Red card background */
   --card-foreground: #f5f5dc; /* Warm cream */
-  --popover: #6b1a1a; /* Wine */
+  --popover: #5a2525; /* Red */
   --popover-foreground: #f5f5dc; /* Warm cream */
-  --primary: #8b2635; /* Rich burgundy/wine */
-  --primary-foreground: #ffd700; /* Bright yellow/gold */
-  --secondary: #5a1a1a; /* Dark wine */
+  --primary: #a63030; /* Rich red/wine */
+  --primary-foreground: #d4a574; /* Light beige/tan */
+  --secondary: #4a1a1a; /* Dark red */
   --secondary-foreground: #f5f5dc; /* Warm cream */
-  --muted: #7a2a2a; /* Muted wine */
+  --muted: #6b2b2b; /* Muted red */
   --muted-foreground: #e8d5b7; /* Soft cream */
-  --accent: #ffd700; /* Bright yellow/gold accent */
-  --accent-foreground: #4a0e0e; /* Deep wine */
+  --accent: #d4a574; /* Light beige/tan accent */
+  --accent-foreground: #3d1a1a; /* Deep red */
   --destructive: #dc2626; /* Red */
   --destructive-foreground: #f5f5dc; /* Warm cream */
-  --border: #7a2a2a; /* Muted wine */
-  --input: #6b1a1a; /* Wine */
-  --ring: #ffd700; /* Gold */
+  --border: #2d1414; /* Dark brown border */
+  --input: #5a2525; /* Red */
+  --ring: #d4a574; /* Beige/tan */
   --radius: 0.75rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);

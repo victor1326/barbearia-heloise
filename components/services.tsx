@@ -2,32 +2,45 @@
 
 import { useEffect, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Scissors, Sparkles, Hand, Palette } from "lucide-react"
+import { Scissors, Sparkles, Hand, Palette, Droplets, Zap } from "lucide-react"
 
 const services = [
   {
     icon: Scissors,
     title: "Cabelo",
-    description: "Cortes, coloração, mechas e tratamentos capilares que realçam sua beleza natural",
+    description:
+      "Cortes, coloração, mechas e tratamentos capilares que realçam sua beleza natural. Também oferecemos corte masculino e penteados para todos",
     price: "A partir de R$ 80",
+  },
+  {
+    icon: Droplets,
+    title: "Barba",
+    description: "Design de barba, aparação e tratamento profissional para um visual impecável e confiante",
+    price: "A partir de R$ 50",
   },
   {
     icon: Hand,
     title: "Unhas",
-    description: "Manicure e pedicure com esmaltação tradicional, gel e nail art personalizada",
+    description: "Manicure e pedicure com esmaltação tradicional, gel e nail art personalizada para todos os gêneros",
     price: "A partir de R$ 45",
   },
   {
     icon: Sparkles,
     title: "Pele",
-    description: "Tratamentos faciais, limpeza de pele e procedimentos para revitalizar sua aparência",
+    description: "Tratamentos faciais, limpeza de pele e procedimentos para revitalizar sua aparência e saúde da pele",
     price: "A partir de R$ 120",
   },
   {
     icon: Palette,
     title: "Maquiagem",
-    description: "Maquiagem profissional para eventos especiais e dia a dia que destaca sua beleza",
+    description: "Maquiagem profissional para eventos especiais e dia a dia que destaca sua beleza natural",
     price: "A partir de R$ 100",
+  },
+  {
+    icon: Zap,
+    title: "Grooming",
+    description: "Pacotes completos de cuidado pessoal e estética corporal para homens e mulheres",
+    price: "A partir de R$ 150",
   },
 ]
 
@@ -66,7 +79,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <Card
               key={index}
