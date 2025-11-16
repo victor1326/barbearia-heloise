@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Calendar, Clock, MapPin, Phone } from "lucide-react"
+import { Calendar, Clock, MapPin, Phone } from 'lucide-react'
 
 export function Booking() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -28,20 +28,20 @@ export function Booking() {
   }, [])
 
   return (
-    <section id="agendamento" ref={sectionRef} className="py-16 md:py-24 bg-primary">
+    <section id="agendamento" ref={sectionRef} className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-primary-foreground text-balance">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-card-foreground text-balance">
               Agende Seu Horário
             </h2>
-            <div className="w-20 h-1 bg-primary-foreground mx-auto" />
-            <p className="text-base md:text-lg text-foreground max-w-2xl mx-auto text-pretty px-4">
+            <div className="w-20 h-1 bg-accent mx-auto" />
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty px-4">
               Entre em contato conosco e garanta seu horário com os melhores profissionais
             </p>
           </div>
 
-          <Card className="bg-card border-none shadow-2xl">
+          <Card className="bg-background border-none shadow-2xl">
             <CardContent className="p-6 md:p-8 lg:p-12">
               <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
                 <div className="space-y-5 md:space-y-6">
