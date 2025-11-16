@@ -53,7 +53,7 @@ export function About() {
           </div>
           <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-2xl order-1 lg:order-2">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5Tcv2PoXxwTBWD3ahVukkXpIdVQsZT.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gJveIlU48g2zNJZorFXqpSKeQWghi0.png"
               alt="Interior elegante do Beleza Essencial"
               className="w-full h-full object-cover"
             />

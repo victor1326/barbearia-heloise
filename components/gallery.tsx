@@ -3,12 +3,10 @@
 import { useEffect, useRef } from "react"
 
 const galleryImages = [
-  { id: 1, src: "/gallery/hair-color.jpg", alt: "Coloração e mechas profissionais" },
-  { id: 2, src: "/gallery/manicure.jpg", alt: "Manicure profissional" },
-  { id: 3, src: "/gallery/facial.jpg", alt: "Tratamento facial relaxante" },
-  { id: 4, src: "/gallery/makeup.jpg", alt: "Maquiagem profissional" },
-  { id: 5, src: "/gallery/hairstyle.jpg", alt: "Penteados estilosos" },
-  { id: 6, src: "/gallery/classic-cut.jpg", alt: "Corte clássico elegante" },
+  { id: 1, src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RJmjHnx8x4VEcpR7bNq4eSHdsjOmdc.png", alt: "Serviço de barba profissional" },
+  { id: 2, src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Qk8ePKRXYHmdFptyzyOv9tqIWgC2Kq.png", alt: "Corte de cabelo masculino" },
+  { id: 3, src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-33WJtNfuPUws3pDwLyuPXPDpjfGWp6.png", alt: "Styling e escova profissional feminino" },
+  { id: 4, src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-wPEB7Lpt6WRKlM9nUZmsZpAgeYWYu8.png", alt: "Corte de cabelo feminino" },
 ]
 
 export function Gallery() {
