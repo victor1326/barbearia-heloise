@@ -18,78 +18,83 @@ export function Header() {
   }, [])
 
   const menuItems = [
+    { label: "Início", href: "#inicio" },
     { label: "Serviços", href: "#servicos" },
     { label: "Sobre Nós", href: "#sobre" },
+    { label: "Galeria", href: "#galeria" },
     { label: "Agendamento", href: "#agendamento" },
+    { label: "Contato", href: "#contato" },
   ]
-
-  const handleMenuClick = () => {
-    setIsMobileMenuOpen(false)
-  }
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-background/80 backdrop-blur-sm"
+        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="relative w-32 h-12 md:w-48 md:h-16 flex-shrink-0">
-            <Image src="/logo.png" alt="Beleza Essencial" fill className="object-contain" priority />
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="relative w-48 h-16">
+              <Image src="/logo.png" alt="Hairstyling Salão" fill className="object-contain" priority />
+            </div>
           </div>
 
-          <nav className="hidden lg:flex items-center gap-6">
+          {/* Desktop Menu */}
+          <nav className="hidden lg:flex items-center gap-8">
             {menuItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-300 text-sm font-medium whitespace-nowrap"
+                className="text-foreground hover:text-accent transition-colors duration-300 text-sm font-medium"
               >
                 {item.label}
               </a>
             ))}
           </nav>
 
-          <Button
-            className="hidden md:flex bg-primary text-primary-foreground hover:bg-primary/90 gold-glow-hover rounded-full px-6"
-            asChild
-          >
-            <a href="#agendamento">Agende Agora</a>
-          </Button>
+          {/* CTA Button */}
+          <div className="hidden lg:block">
+            <Button
+              className="bg-primary text-primary-foreground hover:bg-primary/90 gold-glow-hover rounded-full px-6"
+              asChild
+            >
+              <a href="#agendamento">Agende Agora</a>
+            </Button>
+          </div>
 
+          {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-foreground hover:text-accent transition-colors"
+            className="lg:hidden text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Menu"
+            aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border/50">
-            <nav className="flex flex-col gap-4">
+          <nav className="lg:hidden py-4 border-t border-border">
+            <div className="flex flex-col gap-4">
               {menuItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  onClick={handleMenuClick}
-                  className="text-foreground hover:text-accent transition-colors duration-300 text-base font-medium py-2"
+                  className="text-foreground hover:text-accent transition-colors duration-300 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
-              <Button
-                className="bg-primary text-primary-foreground hover:bg-primary/90 gold-glow-hover rounded-full w-full mt-2"
-                asChild
-              >
-                <a href="#agendamento" onClick={handleMenuClick}>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full mt-2" asChild>
+                <a href="#agendamento" onClick={() => setIsMobileMenuOpen(false)}>
                   Agende Agora
                 </a>
               </Button>
-            </nav>
-          </div>
+            </div>
+          </nav>
         )}
       </div>
     </header>

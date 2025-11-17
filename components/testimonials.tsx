@@ -6,23 +6,18 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Maria Santos",
-    text: "Encontrei no Beleza Essencial muito mais que um salão. Encontrei um lugar que me ajudou a resgatar minha autoestima e me sentir linda novamente!",
-    rating: 5,
-  },
-  {
     name: "Carlos Silva",
-    text: "Como homem, nunca pensei que poderia ter uma experiência tão acolhedora e profissional. Saí daqui me sentindo mais confiante e cuidado!",
+    text: "Excelente atendimento e profissionais muito qualificados. Sempre saio satisfeito com o resultado!",
     rating: 5,
   },
   {
-    name: "Ana Paula",
-    text: "Estava passando por um momento difícil e me descuidando. Aqui fui acolhida com carinho e saí renovada, por dentro e por fora!",
+    name: "Roberto Mendes",
+    text: "O melhor salão da região! Ambiente agradável e serviços de primeira qualidade.",
     rating: 5,
   },
   {
-    name: "Felipe Costa",
-    text: "O atendimento é excelente! Fiz meu design de barba e saí confiante. Recomendo para todos os meus amigos!",
+    name: "Fernando Costa",
+    text: "Frequento há anos e nunca me decepcionei. Recomendo para todos os amigos!",
     rating: 5,
   },
 ]
@@ -53,14 +48,12 @@ export function Testimonials() {
     <section ref={sectionRef} className="py-24 bg-[#C4BAB3]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#52130C] text-balance">Histórias de Transformação</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-[#52130C] text-balance">Depoimentos</h2>
           <div className="w-20 h-1 bg-accent mx-auto" />
-          <p className="text-lg text-[#603A30] max-w-2xl mx-auto text-pretty">
-            Veja como ajudamos pessoas a reconhecerem sua própria beleza
-          </p>
+          <p className="text-lg text-[#603A30] max-w-2xl mx-auto text-pretty">O que nossos clientes dizem sobre nós</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-background border-border hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-6 space-y-4">

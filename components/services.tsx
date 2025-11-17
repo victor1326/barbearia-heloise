@@ -2,45 +2,32 @@
 
 import { useEffect, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Scissors, Sparkles, Hand, Palette, Droplets, Zap } from "lucide-react"
+import { Scissors, Sparkles, Droplet, Eye } from "lucide-react"
 
 const services = [
   {
     icon: Scissors,
-    title: "Cabelo",
-    description:
-      "Cortes, coloração, mechas e tratamentos capilares que realçam sua beleza natural. Também oferecemos corte masculino e penteados para todos",
-    price: "A partir de R$ 80",
-  },
-  {
-    icon: Droplets,
-    title: "Barba",
-    description: "Design de barba, aparação e tratamento profissional para um visual impecável e confiante",
-    price: "A partir de R$ 50",
-  },
-  {
-    icon: Hand,
-    title: "Unhas",
-    description: "Manicure e pedicure com esmaltação tradicional, gel e nail art personalizada para todos os gêneros",
-    price: "A partir de R$ 45",
+    title: "Corte Masculino",
+    description: "Cortes modernos e clássicos executados por profissionais experientes",
+    price: "A partir de R$ 60",
   },
   {
     icon: Sparkles,
-    title: "Pele",
-    description: "Tratamentos faciais, limpeza de pele e procedimentos para revitalizar sua aparência e saúde da pele",
-    price: "A partir de R$ 120",
+    title: "Barba Premium",
+    description: "Tratamento completo com toalha quente, óleos especiais e finalização impecável",
+    price: "A partir de R$ 45",
   },
   {
-    icon: Palette,
-    title: "Maquiagem",
-    description: "Maquiagem profissional para eventos especiais e dia a dia que destaca sua beleza natural",
-    price: "A partir de R$ 100",
+    icon: Droplet,
+    title: "Hidratação Capilar",
+    description: "Tratamentos profissionais para revitalizar e fortalecer seus cabelos",
+    price: "A partir de R$ 80",
   },
   {
-    icon: Zap,
-    title: "Grooming",
-    description: "Pacotes completos de cuidado pessoal e estética corporal para homens e mulheres",
-    price: "A partir de R$ 150",
+    icon: Eye,
+    title: "Design de Sobrancelhas",
+    description: "Modelagem e design personalizado para realçar seu olhar",
+    price: "A partir de R$ 35",
   },
 ]
 
@@ -67,31 +54,29 @@ export function Services() {
   }, [])
 
   return (
-    <section id="servicos" ref={sectionRef} className="py-16 md:py-24 bg-card">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-card-foreground text-balance">
-            Nossos Serviços
-          </h2>
+    <section id="servicos" ref={sectionRef} className="py-24 bg-card">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-serif text-card-foreground text-balance">Nossos Serviços</h2>
           <div className="w-20 h-1 bg-accent mx-auto" />
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty px-4">
-            Serviços pensados para elevar sua autoestima e bem-estar
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+            Oferecemos uma gama completa de serviços para cuidar do seu visual
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <Card
               key={index}
               className="bg-background border-border hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-accent/20 group"
             >
-              <CardContent className="p-5 md:p-6 space-y-3 md:space-y-4">
-                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="w-7 h-7 md:w-8 md:h-8 text-accent" />
+              <CardContent className="p-6 space-y-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-lg md:text-xl font-serif text-foreground">{service.title}</h3>
+                <h3 className="text-xl font-serif text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
-                <p className="text-accent font-semibold text-base md:text-lg">{service.price}</p>
+                <p className="text-accent font-semibold text-lg">{service.price}</p>
               </CardContent>
             </Card>
           ))}
