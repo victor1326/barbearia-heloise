@@ -9,7 +9,7 @@ export function Footer() {
           {/* Logo and Social */}
           <div className="text-center mb-8">
             <div className="relative w-64 h-20 mx-auto mb-6">
-              <Image src="/logo.png" alt="Hairstyling Salão" fill className="object-contain" />
+              <Image src="/logo.png" alt="Beleza Essencial" fill className="object-contain" />
             </div>
             <div className="flex justify-center gap-6 mb-6">
               <a
@@ -45,9 +45,11 @@ export function Footer() {
           {/* Divider */}
           <div className="border-t border-border/30 pt-8">
             <p className="text-center text-foreground/70 text-sm">
-              © {new Date().getFullYear()} Hairstyling Salão. Todos os direitos reservados.
+              © {new Date().getFullYear()} Beleza Essencial. Todos os direitos reservados.
             </p>
-            <p className="text-center text-foreground/50 text-xs mt-2">Desenvolvido com excelência e dedicação</p>
+            <p className="text-center text-foreground/50 text-xs mt-2">
+              Transformando vidas através da beleza e autoestima
+            </p>
           </div>
         </div>
       </div>
